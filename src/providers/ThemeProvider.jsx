@@ -1,4 +1,4 @@
-import { themeContext } from "../contexts/Themecontext";
+import { ThemeContext } from "../contexts/Themecontext";
 import { useState } from "react";
 
 export function ThemeProvider({children}) {
@@ -11,8 +11,8 @@ export function ThemeProvider({children}) {
   const value = {theme, toggleTheme};
 
   return (
-    <themeContext.Provider value={value}>
+    <ThemeContext.Provider value={value}>
       {children}
-    </themeContext.Provider>
+    </ThemeContext.Provider>
   )
 }

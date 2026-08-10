@@ -1,0 +1,39 @@
+.exercise-card {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  font-family: sans-serif;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.app-header {
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.app-header.light {
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+.app-header.dark {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #f3f4f6;
+}

@@ -1,8 +1,11 @@
 import { ThemeProvider } from "./providers/ThemeProvider";
+//provider 파일에 있는거
 import { useTheme } from "./contexts/Themecontext";
+//context 파일에 있는거
 
 function Header() {
-  const themeValue = useTheme();
+  const {themeValue} = useTheme();
+  //useTheme이라는 커스텀 훅(함수)에서 context를 꺼내는 작업 
 
   return (
     <header
@@ -15,7 +18,8 @@ function Header() {
 }
 
 function ThemeToggleButton() {
-  const [theme, toggleTheme] = useTheme;
+  const {theme, toggleTheme} = useTheme();
+  //useTheme이라는 커스텀 훅(함수)에서 context(필요한 것들)를 꺼내는 작업 
 
   return (
     <button type="button" onClick={toggleTheme}>
