@@ -4,15 +4,15 @@ import { useTheme } from "./contexts/Themecontext";
 //context 파일에 있는거
 
 function Header() {
-  const {themeValue} = useTheme();
+  const {theme} = useTheme();
   //useTheme이라는 커스텀 훅(함수)에서 context를 꺼내는 작업 
 
   return (
     <header
-      className={`app-header ${themeValue === "dark" ? "dark" : "light"}`}
+      className={`app-header ${theme === "dark" ? "dark" : "light"}`}
     >
       <h1>내 쇼핑몰</h1>
-      <p>현재 테마: {themeValue === "dark" ? "다크 모드" : "라이트 모드"}</p>
+      <p>현재 테마: {theme === "dark" ? "다크 모드" : "라이트 모드"}</p>
     </header>
   );
 }
